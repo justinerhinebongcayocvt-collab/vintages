@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop and Thrift | Vintage Clothes</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-800 antialiased">
+
+    <nav class="fixed w-full z-50 transition-all duration-300 bg-white/80 backdrop-blur-md border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="text-2xl font-bold text-blue-600">Stop and Thrift</a>
+                </div>
+
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html" class="hover:text-blue-600 transition font-medium text-gray-600">Home</a>
+                    <a href="products.html" class="hover:text-blue-600 transition font-medium text-gray-600">Products</a>
+                    <a href="About.html" class="hover:text-blue-600 transition font-medium text-gray-600">About</a>
+                    <a href="minigames.html" class="hover:text-blue-600 transition font-medium text-gray-600">Games</a>
+                    <a href="contact.html" class="hover:text-blue-600 transition font-medium text-gray-600">Contact</a>
+                    <button class="bg-blue-600 text-white px-6 py-2 rounded-full font-bold hover:bg-blue-700 transition">
+                        Join Now
+                    </button>
+                </div>
+
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="p-2 text-gray-600 hover:text-blue-600 focus:outline-none">
+                        <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-gray-100 px-4 py-6 space-y-3 shadow-lg">
+            <a href="index.html" class="block text-lg font-medium py-2 border-b border-gray-50">Home</a>
+            <a href="products.html" class="block text-lg font-medium py-2 border-b border-gray-50">Products</a>
+            <a href="About.html" class="block text-lg font-medium py-2 border-b border-gray-50">About</a>
+            <a href="minigames.html" class="block text-lg font-medium py-2 border-b border-gray-50">Games</a>
+            <a href="contact.html" class="block text-lg font-medium py-2 border-b border-gray-50">Contact</a>
+            <button class="w-full mt-4 bg-blue-600 text-white py-3 rounded-xl font-bold">Join Now</button>
+        </div>
+    </nav>
+
+    <main class="pt-32 pb-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center mb-12">
+                <h1 class="text-5xl md:text-7xl font-black text-gray-900 mb-4 tracking-tighter uppercase">
+                    <span class="text-blue-600">Vintage</span> Clothes
+                </h1>
+                <p class="text-gray-500 text-lg max-w-2xl mx-auto">
+                   
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <div class="group relative rounded-2xl overflow-hidden h-96 bg-gray-100 border border-gray-100 shadow-md">
+                    <img src="images/black.jpg" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" alt="Collection 1">
+                    <div class="absolute bottom-0 left-0 p-6 bg-gradient-to-t from-black/70 to-transparent w-full">
+                        <p class="text-white text-xl font-bold">derschutze 23,000</p>
+                    </div>
+                </div>
+
+                <div class="group relative rounded-2xl overflow-hidden h-96 bg-gray-100 border border-gray-100 shadow-md">
+                    <img src="images/denim.jpg" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" alt="Collection 2">
+                    <div class="absolute bottom-0 left-0 p-6 bg-gradient-to-t from-black/70 to-transparent w-full">
+                        <p class="text-white text-xl font-bold">Denim Carhartt 12,000</p>
+                    </div>
+                </div>
+
+                <div class="group relative rounded-2xl overflow-hidden h-96 bg-gray-100 border border-gray-100 shadow-md">
+                    <img src="images/leather.jpg" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" alt="Collection 3">
+                    <div class="absolute bottom-0 left-0 p-6 bg-gradient-to-t from-black/70 to-transparent w-full">
+                        <p class="text-white text-xl font-bold"> AK Leather 7,000</p>
+                    </div>
+                </div>
+
+                <div class="group relative rounded-2xl overflow-hidden h-96 bg-gray-100 border border-gray-100 shadow-md">
+                    <img src="images/cny.jpg "w-full h-full object-cover transition duration-500 group-hover:scale-110" alt="Collection 4">
+                    <div class="absolute bottom-0 left-0 p-6 bg-gradient-to-t from-black/70 to-transparent w-full">
+                        <p class="text-white text-xl font-bold">CNY Jacket 4,500</p>
+                    </div>
+                </div>
+
+                <div class="group relative rounded-2xl overflow-hidden h-96 bg-gray-100 border border-gray-100 shadow-md">
+                    <img src="images/levis.jpg" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" alt="Collection 5">
+                    <div class="absolute bottom-0 left-0 p-6 bg-gradient-to-t from-black/70 to-transparent w-full">
+                        <p class="text-white text-xl font-bold">Levis Denim 8,500r</p>
+                    </div>
+                </div>
+
+                <div class="group relative rounded-2xl overflow-hidden h-96 bg-gray-100 border border-gray-100 shadow-md">
+                    <img src="images/yohji.jpg" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" alt="Collection 6">
+                    <div class="absolute bottom-0 left-0 p-6 bg-gradient-to-t from-black/70 to-transparent w-full">
+                        <p class="text-white text-xl font-bold">YOHJi VINTAGE 12,000</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-50 py-12 border-t border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-xl font-bold text-gray-900 mb-2">Stop and Thrift</h2>
+            <div class="flex justify-center space-x-6 mb-4 text-gray-500 text-sm font-medium">
+                <a href="#" class="hover:text-blue-600">Instagram</a>
+                <a href="#" class="hover:text-blue-600">Facebook</a>
+                <a href="#" class="hover:text-blue-600">TikTok</a>
+            </div>
+            <p class="text-gray-400 text-xs uppercase tracking-widest">&copy; 2026 Stop and Thrift</p>
+        </div>
+    </footer>
+
+    <script>
+        const menuBtn = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>
